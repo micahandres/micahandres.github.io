@@ -1,14 +1,11 @@
 # AI Machine Learning Engineer
-### Education
-B.S. in Cognitive Science specialization in Machine Learning and Neural Computation
 
-### Work Experience
-AI Researcher @ Brown University
-- Fine-Tuning Image Segmentation Model:
+## Education
+- B.S. in Cognitive Science in Machine Learning and Neural Computation | UC San Diego
 
-AI Engineer @ Neoboard
-
-Researcher @ Carnegie Mellon University
-- AI Curriculum Design
-
-### Projects
+## Projects 
+# Fine-Tuning Neural Network for Sketch-Aware Object Segmentation
+- Working under Computer Science Prof. James Tompkin, I developed a sketch-aware object segmentation pipeline to
+improve flood fill accuracy in raster sketches
+- Fine-tuned Meta’s Segment Anything Model (SAM) on the OpenSketch dataset to segment sketch object
+outlines while ignoring construction lines—using bounding box prompts, decoder-only training, and a custom BCE + Dice loss; improved performance from baseline (Pixel Accuracy: 8.85%, mIoU: 1.74%, F1:3.22%) to 95.46%, 78.60%, and 87.65%
