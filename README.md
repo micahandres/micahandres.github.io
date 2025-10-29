@@ -1,7 +1,8 @@
 # AI Machine Learning Engineer
 
 ## Education
-- B.S. in Cognitive Science in Machine Learning and Neural Computation | UC San Diego
+- University of California San Diego
+- B.S. in Cognitive Science in Machine Learning and Neural Computation 
 
 ## Projects 
 # Fine-Tuning Neural Network for Sketch-Aware Object Segmentation
