@@ -184,9 +184,27 @@ a:hover { color: var(--link-hover); }
   gap: 16px;
 }
 
+/* Force horizontal layout on wider screens */
 @media (min-width: 720px) {
   .grid { grid-template-columns: 1fr; }
-  .card { grid-template-columns: 320px 1fr; align-items: start; }
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .project-img {
+    flex: 0 0 320px;
+    max-width: 320px;
+  }
+  .card-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-img { flex-basis: 360px; max-width: 360px; }
 }
 
 /* Project image */
@@ -255,8 +273,4 @@ pre, code {
   color: var(--muted);
 }
 
-/* Responsive */
-@media (min-width: 1024px) {
-  .card { grid-template-columns: 360px 1fr; }
-}
 
