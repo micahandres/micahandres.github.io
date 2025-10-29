@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Micah — Machine Learning Portfolio</title>
+  <meta name="description" content="Machine learning portfolio showcasing projects, research, and writing.">
+  <!-- EB Garamond font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Micah</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Machine Learning Portfolio</h1>
+        <p>Selected projects in computer vision, NLP, and applied ML. Clean, readable, and fast — set in EB Garamond.</p>
+        <div class="hero-cta">
+          <a class="button" href="#projects">View Projects</a>
+          <a class="link" href="#about">About Me</a>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Self-Supervised Vision Representation</h3>
+            <p>Implemented SimCLR-style contrastive learning with strong augmentations; improved downstream accuracy by 6.2% on CIFAR-10.</p>
+            <div class="meta">
+              <span>PyTorch</span>
+              <span>SimCLR</span>
+              <span>Vision</span>
+            </div>
+            <div class="actions">
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Report</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Transformer Fine-Tuning for QA</h3>
+            <p>Fine-tuned a DistilBERT model on SQuAD 2.0 with adversarial training, reducing EM error by 3.1 points.</p>
+            <div class="meta">
+              <span>Hugging Face</span>
+              <span>NLP</span>
+              <span>QA</span>
+            </div>
+            <div class="actions">
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Blog</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Time-Series Forecasting</h3>
+            <p>Built a robust forecasting pipeline (Prophet + LSTM ensemble) with automated cross-validation and explainability plots.</p>
+            <div class="meta">
+              <span>Forecasting</span>
+              <span>LSTM</span>
+              <span>MLOps</span>
+            </div>
+            <div class="actions">
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p>I build practical machine learning systems focused on clarity, reproducibility, and measurable impact. I enjoy model interpretability, strong baselines, and clean evaluation.</p>
+      </div>
+    </section>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub: <a href="#" target="_blank" rel="noopener">github.com/your-handle</a></p>
+        <p>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Micah. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
